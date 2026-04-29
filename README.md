@@ -2,6 +2,11 @@
 
 **SpamShield AI** is a production-grade, full-stack web application for detecting spam messages with high precision. It features a modern, responsive frontend with 3D visualizations and a scalable, robust FastAPI backend.
 
+## 🌍 Live Demo
+
+- **Frontend Application** (Vercel): `https://spam-shield-classifier.vercel.app/`
+- **Backend API Docs** (Hugging Face): `https://artasam-khan-spam-classifier-api.hf.space/docs`
+
 The application uses a trained scikit-learn Naive Bayes model to classify messages as "Spam" or "Ham" (Not Spam) and provides a confidence score alongside its prediction.
 
 ## 🌟 Features
@@ -51,8 +56,10 @@ The frontend will run on `http://localhost:5173` and automatically proxy API req
 
 The project is configured for split deployment:
 
-- **Frontend**: Vercel (Ready via `vercel.json`). Simply connect this repository to Vercel and it will seamlessly build and deploy the `frontend` folder.
-- **Backend / API**: Hugging Face Spaces (Docker). The provided `backend/Dockerfile` targets Python 3.13-slim and is optimized for the free Hugging Face Spaces Docker environment. 
+- **Frontend** (Vercel): The app is ready to deploy natively on Vercel. 
+  - Connect the repository to Vercel and set the Root Directory to the `frontend` folder.
+  - Make sure to add `VITE_API_URL` in your Vercel Environment Variables and set it to your Hugging Face Space URL (e.g., `https://your-namespace-app-name.hf.space`).
+- **Backend / API** (Hugging Face Spaces): The provided `backend/Dockerfile` targets Python 3.13-slim and is optimized for the free Hugging Face Spaces Docker environment. 
 
 ## 🧪 CI/CD
 
