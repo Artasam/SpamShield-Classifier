@@ -1,0 +1,7 @@
+fastapi
+uvicorn[standard]
+scikit-learn
+nltk
+pydantic
+python-dotenv
+numpy

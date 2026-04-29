@@ -1,0 +1,38 @@
+.glass-card-component {
+  background: var(--bg-card);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+  padding: var(--space-xl);
+  transition: box-shadow var(--transition-base);
+}
+
+.glass-card-component.hoverable:hover {
+  box-shadow: var(--shadow-lg);
+}
+
+.glass-card-component.glow-primary {
+  border-color: rgba(0, 212, 255, 0.15);
+}
+
+.glass-card-component.glow-primary:hover {
+  box-shadow: var(--shadow-glow-primary);
+}
+
+.glass-card-component.glow-success {
+  border-color: rgba(0, 230, 118, 0.15);
+}
+
+.glass-card-component.glow-success:hover {
+  box-shadow: var(--shadow-glow-success);
+}
+
+.glass-card-component.glow-danger {
+  border-color: rgba(255, 61, 113, 0.15);
+}
+
+.glass-card-component.glow-danger:hover {
+  box-shadow: var(--shadow-glow-danger);
+}

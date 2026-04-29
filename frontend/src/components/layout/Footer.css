@@ -1,0 +1,38 @@
+.footer {
+  border-top: 1px solid var(--border-color);
+  padding-top: var(--space-2xl);
+  padding-bottom: var(--space-2xl);
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
+  text-align: center;
+}
+
+.footer-logo .logo-text {
+  font-size: var(--fs-xl);
+  opacity: 0.8;
+}
+
+.footer-copyright {
+  color: var(--text-muted);
+  font-size: var(--fs-sm);
+}
+
+.footer-made-with {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  color: var(--text-secondary);
+  font-size: var(--fs-xs);
+  margin-top: var(--space-xs);
+}
+
+.heart-icon {
+  color: var(--danger);
+  fill: var(--danger);
+}
